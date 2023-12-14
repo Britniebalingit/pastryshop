@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Pastry Shop</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-image: url("image/Bread.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-attachment: fixed;
+            color: rgb(14, 13, 13);
+            text-align: center;
+        }
+
+        nav {
+            background-color: salmon;
+            padding: 30px;
+            font-size: 40px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            text-align: center;
+            margin: 10px;
+            text-decoration: double;
+        }
+
+
+      
+        nav a {
+            padding: 10px;
+            color: saddlebrown;
+            text-decoration: none;
+            margin: 10px;
+            font-weight: bold;
+        }
+
+        nav a:hover{
+          color:beige;
+        }
+        section {
+            background-color: salmon;
+            margin: 20px;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(67, 58, 58, 0.1);
+        }
+        
+        
+
+        h2 {
+          background-color: burlywood;
+          color: aliceblue;
+          text-align: center;
+          padding: 10px;
+          border-radius: 8px;
+        }
+        
+
+        h3 {
+          font-family: Arial, Helvetica, sans-serif;
+          font-size: large;
+          text-align: center;
+          color: black;
+          padding: 10px;
+        }
+        h5{
+          font-size: x-large;
+          background-color: burlywood;
+          color: aliceblue;
+          text-align: center;
+          padding: 10px;
+          border-radius: 8px;
+        } 
+         h6{
+          background-image: url("image/Illustration.jpg");
+          font-size: larger;
+          padding: 100px;
+          margin: 10px;
+          border-radius: 8px;
+         }
+
+        p {
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-attachment: fixed;
+          font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+          font-weight: bold;
+          text-align: justify;
+          text-decoration: none;
+
+        }
+        
+        button {
+            padding: 10px;
+            background-color: blue;
+            color: rgb(17, 17, 17);
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            
+        }
+
+        button:hover {
+            background-color: black;
+            align-self: center;
+            margin: auto;
+            border: none;
+            padding:20px;
+            padding-top: 20px;
+           
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+    
+        li {
+            margin-bottom: 8px;
+        }
+
+        
+        .payment {
+          max-width: 360px;
+          margin: 80px auto;
+          height: auto;
+          padding: 35px;
+          padding-top: 70px;
+          border-radius: 5px;
+          position: relative;
+        }
+        .payment h2{
+          text-align: center;
+          letter-spacing: 2px;
+          margin-bottom: 40px;
+          color: #0d3c64;
+        }
+        .form .label{
+          display: block;
+          color: #555555;
+          margin-bottom: 6px;
+        }
+
+        .form .input{
+          padding: 13px 0 13px 25px;
+          width: 300px;
+          text-align: center;
+          border: 2px solid #dddddd;
+          border-radius: 5px;
+          word-wrap: 3px;
+          outline: none;
+          font-size: 16px;
+          color: #555555;
+        }
+
+
+        .card-item {
+          width: 48%;
+
+        }
+        .space{
+          margin-bottom: 30px;
+        }
+
+        .icon-relative{
+          position: relative;
+        }
+        
+       
+        *{
+          margin: 0px;
+          border-radius: 0px;
+          padding: 0px;
+          box-sizing: border-box;
+          font-family: sans-serif;
+        }
+
+      .contact{
+        min-height: 100vh;
+        padding: 50px;
+        text-align: center;
+      }
+
+      .contact-warrper {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 30px;
+      }
+
+      .contact-form {
+        text-align: left;
+      }
+
+      .contact-form {
+        font-size: 24px;
+        margin-bottom: 20px;
+        color: #333;
+      }
+
+      .form-group {
+        margin-bottom: 20px;
+      }
+      input, textarea {
+        width: 100%;
+        padding: 12px;
+        border-radius: 8px;
+        border: none;
+        background-color: beige;
+        color: black;
+      }
+      input:focus,
+      textarea:focus {
+        outline: none;
+        box-shadow: 0 0 8px #bbb;
+      }
+      .contact-info{
+        text-align: left;
+      }
+      .contact-info h4{
+        font-size: 24px;
+        margin-bottom: 20px;
+        color:#333;
+      }
+      .contact-info p{
+        margin-bottom: 10px;
+        color: #555;
+      }
+
+    
+      
+
+    </style>
+</head>
+<body>
+    <header>
+      <marquee> <h1>Katalk-took Pastry Shop</h1></marquee>
+
+    </header>
+    <nav>
+    
+        <a href="#home">Home</a>
+        <a href="#menu">Menu</a>
+        <a href="#pay">Payment</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact Us</a>
+
+    </nav>
+
+     <!--CONTAINER & HEADER-->
+  <img src="image/Hand Drawn Bread.jpg"
+  width="1200" height="600">
+       <div class="container"></div>
+      <div id="header"></div>
+
+
+    <section id="home">
+        <h2>Welcome to our Katalk-took Pastry Shop!</h2>
+        <p>Welcome to Katalk-took Pastry Shop, where every creation is a delightful masterpiece! Nestled in the heart of <em>SORSOGON</em>, our pastry haven invites you to indulge in a world of sweet enchantment. From heavenly croissants to decadent cakes, each treat at Katalk-took is meticulously crafted to elevate your taste experience. Step into our charming space, where the scent of freshly baked goods beckons you to savor the moment. At Katalk-took, we're passionate about turning ordinary days into extraordinary ones through the magic of pastries. Join us on a journey of flavor and delight.</p>
+      
+      <!--CONTAINER & HEADER-->
+  <img src="image/Pastry Shop.jpg"
+    width="1150" height="550"> 
+       <div class="container"></div>
+      <div id="header"></div>
+    </section>
+
+    <section id="menu">
+        <h2>Menu</h2>
+        <div id="pastry-list"></div>
+        <ul>
+          
+          <li>
+              <h3>Golden Croissants</h3>
+              <img src="image/Golden Croissants.jpg" width="1090" height="400">
+           <p>Golden Croissants, with their crisp, flaky layers and rich, buttery aroma, promise a sublime experience that encapsulates the epitome of indulgence in every golden-brown bite.</p>
+             <h3><span>$ 3 </span></h3>
+              <br>
+              <h3><button id="btn"><a href="#pay">Buy Now</a></button></h3>
+          </li>
+
+            <li>
+              <h3>Cheesecake</h3>
+              <img src="/image/Cheesecake.jpg" width="1090" height="400">
+              <p>
+                Our Cheesecake is a velvety symphony of creaminess and decadence, featuring a luscious, perfectly balanced blend of smooth cream cheese on a buttery graham cracker crust that melts in your mouth with each heavenly forkful.
+              </p>
+              <h3><span>$ 4</span></h3>
+              <br> 
+              <h3><button id="btn"><a href="#pay">Buy Now</a></button></h3>
+            </li>
+
+            <li>
+              <h3>Egg Brownies</h3>
+             <img src="image/Egg Brownies.jpg" width="1090" height="400">
+              <p>Egg Brownies, a harmonious fusion of rich cocoa and moist, fudgy goodness, boast an irresistibly indulgent texture, making them a delightful treat for chocolate enthusiasts seeking the perfect balance of sweetness and decadence.</p>
+              <h3><span>$ 2</span></h3>
+              <br>
+              <h3><button id="btn"><a href="#pay">Buy Now</a></button></h3> 
+            </li>
+
+            <li>
+              <h3>Muffins</h3>
+              <img src="image/Muffins.jpg" width="1090" height="400">
+              <p>Our muffins are a delightful explosion of flavors and textures, boasting a moist and tender crumb that enrobes a medley of wholesome ingredients, creating a perfect harmony of sweetness and satisfaction in every bite.</p>
+              <h3><span>$ 2 </span></h3>
+              <br>
+             <h3><button id="btn"><a href="#pay">Buy Now</a></button></h3>
+            </li>
+
+            <li>
+              <h3>Wheat Breads</h3>
+             <img src="image/Wheat Bread.jpg" width="1090" height="400">
+              <p>
+                Our Wheat Bread is a testament to wholesome simplicity, offering a hearty yet tender crumb with a nutty undertone, making it the perfect choice for those who appreciate the rustic charm and nourishing qualities of whole wheat.</p>
+                <h3><span>$ 6</span></h3>
+              <br>
+              <h3><button id="btn"><a href="#pay">Buy Now</a></button></h3>
+            </li>
+
+    </section>
+ 
+     <section id="about">
+        <h5>About Us</h5>
+        <h6><p>This brief journey into the heart of our sweet haven. We are a passionate team of baker, committed to crafting moments of joy through delightful pastries. At Katalk-took, our story is woven into each treat we create. Step into our cozy space and become part of a community that appreciates the art of indulgence. Join us in celebrating life's sweetness, one pastry at a time. We are passionate about creating the finest pastries using the best ingredients. Our goal is to provide a delightful experience for every customer.</p></h6>
+    </section>
+
+
+    <section id="pay">
+      <div class="container">
+        <div class="wrapper">
+          <div class="payment">
+            <h2>Payment</h2>
+
+            <div class="form">
+              <div class="card space icon-relative">
+                <label class="label">Card holder:</label>
+                <input type="text" class="input" name="card holder" placeholder="Card Number">
+              </div>
+              <div class="card-grp space">
+                <div class="card-item icon-relative">
+                  <label class="label">Expiry date:</label>
+                  <input type="text" class="input" name="expiry_date" placeholder="00/ 00 ">
+                </div>
+                <div class="card-grp">
+                  <div class="card-item icon-relative">
+                    <label class="label">CVC:</label>
+                    <input type="text" class="input" name="CVC" placeholder="000">
+                  </div>
+              </div>
+              <h3><button id="btn">Pay Now</button></h3>
+            </div>
+          </div>
+        </div>
+       
+      </div>
+    </section>
+
+
+    <section id="contact">
+      <div class="container">      
+       <h2>Contact Us</h2>
+       <div class="contact-wrapper">
+        <div class="contact-form">
+
+            <h3><p>Have questions or feedback? Reach out to us !</p></h3>
+        
+            <h4>Send us a message</h3>
+            <form>
+              <div class="form-group"> 
+                <input type="text" name="name" placeholder="Your Name">
+              </div>
+              <div class="form-group">
+                <input type="email" name="email" placeholder="Your Email">
+              </div>
+              <div class="form-group">
+              <textarea name="message" placeholder="Your Message"></textarea>
+              </div>
+              <h3><button type="submit">Send Message</button></h3>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    
+
+    <footer>
+      <p>Copyright © 2023 Katalk-took Pastry Shop.</p>
+      <br>
+      Bulan, Sorsogon, Philippines
+      <br>
+      Member: Catherine Groyon, Britnie Balingit, Shajara Ronao, Ahslyn Galarosa, Lyka Ocampo.
+  </footer>
+
+  <script>
+      function showHome() {
+          document.getElementById('Home').innerHTML = '<h2>Welcome to Katalk-took Pastry Shop</h2><p>Welcome to Katalk-took Pastry Shop, where every creation is a delightful masterpiece! Nestled in the heart of <em>SORSOGON</em>, our pastry haven invites you to indulge in a world of sweet enchantment. From heavenly croissants to decadent cakes, each treat at Katalk-took is meticulously crafted to elevate your taste experience. Step into our charming space, where the scent of freshly baked goods beckons you to savor the moment. At Katalk-took, were passionate about turning ordinary days into extraordinary ones through the magic of pastries. Join us on a journey of flavor and delight."</p>';
+      }
+
+      function showMenu() {
+          document.getElementById('Menu').innerHTML = '<h2>Our Menu</h2><ul><li>Golden Croissants</li><li>Cheesecake</li><li>Egg Brownies</li><li>Muffins</li><li>Wheat Bread</li></ul>';
+      }
+
+      function showCart() {
+          document.getElementById('Payment').innerHTML = '<h2>Payment</h2><label class="Card Holder"></label><label class="Expiry Date"></label><label class="CVC"></label>';
+      }
+
+      function showAboutUs() {
+          document.getElementById('AboutUs').innerHTML = '<h2>About Us</h2><p>Brief journey into the heart of our sweet haven. We are a passionate team of baker, committed to crafting moments of joy through delightful pastries. At Katalk-took, our story is woven into each treat we create. Step into our cozy space and become part of a community that appreciates the art of indulgence. Join us in celebrating lifes sweetness, one pastry at a time. We are passionate about creating the finest pastries using the best ingredients. Our goal is to provide a delightful experience for every customer.</p>';
+      }
+
+      function showContact() {
+          document.getElementById('ContactUs').innerHTML = '<h2>Contact Us</h2><h3><p>Have questions or feedback? Reach out to us!</p></h3><h4>Send us a Message</h4>';
+      }
+
+  </script>
+
+</body>
+</html>
